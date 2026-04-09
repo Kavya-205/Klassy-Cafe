@@ -1,0 +1,490 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+*{
+    box-sizing: border-box;
+}
+nav{
+    margin: 10px 10px;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 200px;
+    align-items: center;
+}
+.heading{
+    display: flex;
+}
+.logo-text h2{
+    font-family: 'Pacifico',cursive;
+    margin:0;
+    font-size:40px;
+    color:#222;
+}
+.logo-text p{
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing:4px;
+    color:#ff5a3c;
+    font-weight:600;
+}
+.menu-options ul{
+    display: flex;
+    /* align-items: center; */
+    gap: 45px;
+}
+.menu-options ul li{
+    /* text-decoration: none; */
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+}
+.menu-options a{
+    text-decoration: none;
+}
+.menu-options a li{
+    list-style: none;
+}
+.menu-options li:hover{
+    color: #ff5a3c;
+}
+section{
+    display: flex;
+}
+section .side-sec{
+    height: 700px;
+    width: 500px;
+    background-color:#fb6358;
+    display: flex;
+    /* display: block; */
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.side-sec h1{
+    font-family: cursive;
+}
+.side-sec p{
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.side-sec button{
+    border: none;
+    padding: 10px;
+    font-size: 13px;
+    width: 200px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #ff5a3c;
+}
+.side-sec button:hover{
+    background-color: rgb(249, 234, 228);
+}
+.carousel-wrapper{
+    width: 100%;      /* your required width */
+    height: 700px;      /* your required height */
+    overflow: hidden;   /* ⭐ THIS FIXES EXTRA SPACE */
+    margin: auto;
+}
+.carousel-item img{
+    width: 100%;
+    height: 700px;
+    object-fit: cover;  /* image will not stretch */
+}
+.about-side{
+    display: flex;
+    margin: 10px 150px 10px;
+    padding: 50px 30px;
+    justify-content: space-around;
+}
+.intro{
+    height: 500px;
+    width: 600px;
+    /* padding: 30px;
+    margin: 20px; */
+}
+.intro h2{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
+.vd video{
+    margin-top: 100px;
+    height: 400px;
+    width: 600px;
+}
+.cafe-menu{
+    height: 700px;
+    width: 100%;
+    background-color: rgba(245, 222, 222,0.2);
+}
+.sec1{
+    padding: 100px;
+    margin: 10px 150px;
+    padding: 100px 30px 30px 30px;
+}
+.sec1 h2{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
+
+
+/* .cafe-menu{
+    padding: 80px;
+    text-align: center;
+    background: #f8f8f8;
+} */
+
+.menu-cards{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card{
+    width: 300px;
+    border: none;
+    position: relative;
+}
+
+.card img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.price{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: red;
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+.carousel-indicators button{
+    background-color: red;
+    width: 20px;
+    height: 10px;
+    border-radius: 50%;
+}
+nav{
+    position: sticky;
+    top: 0;
+}
+
+.chefs-sec{
+    width: 100%;
+    height: 500px;
+    margin-top: 100px;
+}
+.cards-chefs{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+.cards{
+    height: 400px;
+    width: 350px;
+    border: 1px solid black;
+    margin-top: 50px;
+}
+
+.chefs-sec h3{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
+.cards img{
+    margin-top: 7px;
+    height: 300px;
+    width:335px;
+    margin-bottom: 15px;
+}
+.cards h5{
+    font-weight: bold;
+}
+.cards:hover h5{
+    color: #fb6358;
+}
+.cards:hover{
+    border: 1px solid #fb6358;
+}
+.chefs-sec{
+    position: relative;
+}
+.cards:hover div{
+    position: absolute;
+    background: rgba(0,0,0,0.8);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.box{
+    position: relative;
+    width: 100%;
+    margin-top: 200px;
+}
+
+.box img{
+    width: 100%;
+    display: block;
+}
+
+.black{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+}
+
+
+.contact{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    margin: 150px;
+}
+.info{
+    color: white;
+}
+
+.service{
+    display: flex;
+    gap: 30px;
+    margin-top: 55px;
+}
+.servicess{
+    width: 260px;
+    height: 170px;
+    background-color: white;
+    padding: 50px 20px 20px;
+    text-align: center;
+    border-radius: 10px;
+    color: black;
+    position: relative;
+}
+.servicess h4{
+    font-weight: bold;
+}
+.servicess a{
+    text-decoration: none;
+}
+
+.servicess a:hover{
+    color: #fb6358;
+}
+.servicess .circle{
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color:#fb6358;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: white;
+}
+form{
+    margin: 100px;
+    margin-top: -60px;
+    top: 0;
+    width: 500px;
+    height: 550px;
+    border-radius: 10px;
+    background-color: white;
+    padding: 30px;
+}
+
+form h3{
+    text-align: center;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    padding: 20px;
+    font-size: 33px;
+}
+
+.inputs{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.inputs input{
+    width: 210px;
+    height: 40px;
+    padding: 12px;
+}
+.inputs select{
+    width: 210px;
+    height: 40px;
+    padding: 8px 12px;
+}
+.inputs input:hover{
+    border: 1px solid #fb6358;
+}
+.inputs textarea:hover{
+    border: 1px solid #fb6358;
+}
+
+.button2nd{
+    color: white;
+    background-color:#ff5a3c;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    border: none;
+    padding: 10px;
+}
+.button2nd:hover{
+    background-color: #f87a64;
+}
+
+footer{
+    width: 100%;
+    height: 160px;
+    padding: 20px;
+    margin-top: 5px;
+    background-color: #fb6358;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.icons-footer{
+    display: flex;
+    gap: 20px;
+    /* margin-left: 50px; */
+}
+.icons-footer .icons{
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    background-color: white;
+    /* display: flex; */
+}
+.icons-footer .icons a i{
+    text-align: center;
+    font-weight: bold;
+    color: #fb6358;
+    font-size: 20px;
+    margin: 15px;
+    background-color: none;
+}
+.icons a i:hover{
+    color: black;
+}
+.klassy-name{
+    display: flex;
+}
+/* .footer-text h2{
+    font-family: 'Pacifico',cursive;
+    margin:0;
+    font-size:35px;
+    color:white;
+}
+.footer-text p{
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing:2px;
+    color:white;
+    font-weight:600;
+}
+.footer-text img{
+    background: none;
+} */
+
+pre{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+img,video{
+    max-width: 100%;
+    height: auto;
+}
+
+/* media queries in large screen */
+
+@media (min-width: 1200px){
+    .menu-cards{
+        flex-wrap: nowrap;
+    }
+    .cards-chefs{
+        flex-wrap: nowrap;
+    }
+}
+
+/* medium screens */
+@media (max-width: 1023px){
+    nav{
+        margin: 20px;
+        padding: 30px 70px;
+    }
+    .heading img{
+        width: 130px;
+        height: 50px;
+    }
+    section{
+        flex-direction: column;
+    }
+    .side-sec{
+        width: 100%;
+        height: 20px;
+        padding: 0px;
+        margin: 0px;
+    }
+    .carousel-wrapper{
+        width: 100%;
+    }
+    .about-side{
+        flex-direction: column;
+        margin: 0px;
+        padding: 30px 20px 10px 10px;
+        width: 100%;
+        flex-wrap: wrap;
+        overflow: visible;
+    }
+    .about-side .intro{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .about-side .intro img{
+        gap: 30px;
+    }
+    .cafe-menu{
+        flex-direction: column;
+        margin: 0px;
+    }
+    .cafe-menu .sec1{
+        margin: 0px;
+    }
+    .cards-chefs{
+        flex-direction: column;
+        padding: 20px;
+        margin: 20px;
+    }
+    .box{
+        width: 100%;
+    }
+    .contact{
+        flex-direction: column;
+        margin: 0px;
+    }
+}
